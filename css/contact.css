@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+*{
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;
+		}
+		body{
+			font-family: montserrat;
+  			background-image: url('/image/contact.gif');
+  			background-repeat: no-repeat;
+  			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+		nav{
+			background: #fff;
+			height: 80px;
+			width: 100%;
+		}
+		label.logo{
+			color: black;
+			font-size: 25px;
+			line-height: 80px;
+			padding: 0 100px;
+			font-weight: bold;
+		}
+		nav ul{
+			float: right;
+			margin-right: 20px;
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 5px;
+		}
+		nav ul li a{
+			color: black;
+			font-size: 17px;
+			padding: 7px 13px;
+			border-radius: 15px;
+			text-transform: uppercase;
+		}
+		a.active,a:hover{
+			background: #1aed07;
+			color: #fff;
+			transition: .5s;
+		}
+		.checkbtn{
+			font-size: 30px;
+			color: white;
+			float: right;
+			line-height: 80px;
+			margin-right: 40px;
+			cursor: pointer;
+			display: none;
+		}
+		#check{
+			display: none;
+		}
+		@media (max-width: 952px){
+			label.logo{
+				font-size: 20px;
+				padding-left: 50px;
+			}
+			nav ul li a{
+				font-size: 16px;
+			}
+		}
+		@media (max-width: 858px){
+			.checkbtn{
+				display:block;
+			}
+			ul{
+				position: fixed;
+				width: 100%;
+				height: 100vh;
+				background: #fff;
+				top: 80px;
+				left: -100%;
+				text-align: center;
+				transition: all .5s;
+			}
+			nav ul li{
+				display: block;
+				margin: 50px 0;
+				line-height: 30px;
+			}
+			nav ul li a{
+				font-size: 20px;
+			}
+			a:hover,a.active{
+				background: none;
+				color: #1aed07;
+			}
+			#check:checked ~ ul{
+				left: 0;
+			}
+		}
+		h1{
+			font-family: Indie Flower;
+			text-align: center;
+			line-height: 2.7;
+			color: #1aed07;
+			font-weight: 5500;
+			font-size: 30%
+			line-height: 90px;
+			font-size: 15px;
+			transition: 0.4s linear;
+		}
+		h1:hover{
+			font-family: Indie Flower;
+			text-align: center;
+			line-height: 2.7;
+			color: #000;
+			font-weight: 5500;
+			font-size: 30%
+			line-height: 90px;
+			font-size: 15px;
+			transition: 0.4s linear;
+		}
+		.md{
+			position: absolute;
+			top: 43%;
+			transform: translateY(-50%);
+			width: 115%;
+			text-align: center;
+		}
+		.wd{
+			position: absolute;
+			top: 77%;
+			transform: translateY(-50%);
+			width: 115%;
+			text-align: center;
+		}
+		.te{
+			display: inline-block;
+		  font-size: 30px;
+		  width: 200px;
+		  height: 40px;
+		  background: #FFFFFF;
+		  margin: 10px;
+		  border-radius: 30%;
+		  box-shadow: 0 5px 15px -5px #00000070;
+		  color: #1aed07;
+		  overflow: hidden;
+		  position: relative;
+		}
+		.middle{
+		  position: absolute;
+		  top: 61%;
+		  transform: translateY(-50%);
+		  width: 115%;
+		  text-align: center;
+		}
+		.web{
+			display: inline-block;
+		  font-size: 30px;
+		  width: 200px;
+		  height: 40px;
+		  background: #FFFFFF;
+		  margin: 10px;
+		  border-radius: 30%;
+		  box-shadow: 0 5px 15px -5px #00000070;
+		  color: #1aed07;
+		  overflow: hidden;
+		  position: relative;
+		}
+
+
+		@keyframes aaa {
+		  0%{
+		    left: -110%;
+		    top: 90%;
+		  }50%{
+		    left: 10%;
+		    top: -30%;
+		  }100%{
+		    top: -10%;
+		    left: -10%;
+		  }
+		}
